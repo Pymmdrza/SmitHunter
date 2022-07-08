@@ -46,7 +46,7 @@ def seek(r, df_handler):
         reqxg = requests.get("http://localhost:5000/balance?active=" + addr).text
         frg = reqxg
         bal = int(frg)
-        sert += 12
+        sert += 1
 
         if int(bal) > 0:
             w += 1
